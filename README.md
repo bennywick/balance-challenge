@@ -4,7 +4,6 @@ This challenge utilizes [Playwright](https://playwright.dev/), an open source en
 
 Please have the following installed on your machine.
 
--   VS Code
 -   Node
 -   Git
 
