@@ -9,7 +9,7 @@ test("find the fake gold bar", async ({ page }) => {
 	// Set the initial left bowl and right bowl. This allows for dynamic inputs.
 	const leftBowl = coinsArray.slice(0, Math.floor(coinsArray.length / 2));
 	const rightBowl = coinsArray.slice(Math.floor(coinsArray.length / 2), coinsArray.length - (coinsArray.length % 2));
-    const goldIndex = await findGoldIndex(page, leftBowl, rightBowl, coinsArray.length);
+    const goldIndex = await findGoldIndex(page, leftBowl, rightBowl, coinsArray.length - 1);
 	await clickAnswer(page, goldIndex)
 	await printWeighings(page, goldIndex)
 });
